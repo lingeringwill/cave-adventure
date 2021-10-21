@@ -24,6 +24,7 @@ public class Room   {
         }
 
         else if (room_num == 2) {
+            String answer = player_input.nextLine();
             x.textHelper("to move press n s e or w");
             if (answer.equals(n)) {
                 room_num == 6;
@@ -40,6 +41,22 @@ public class Room   {
                 }
             }
 
+            else if (room_num == 3) {
+                x.textHelper("to move press n s e or w");
+                if (answer.equals(n)) {
+                    room_num == 4;
+                }
+                if (answer.equals(e)) {
+                   room_num == 4;
+                }
+                if (answer.equals(s)) {
+                    x.textHelper("the wall has a cold yet reassuring feeling to it");
+                    room_changer(x);
+                }
+                if (answer.equals(w)) {
+                    x.textHelper("unfortunitely the power of intangibility was not graced upon you");
+                 }
+            } 
             
         }
        
