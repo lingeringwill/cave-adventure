@@ -5,7 +5,6 @@ public class cavestuff {
  public String name;
  public int games_won;
  public String boss_name;
- public int[] room = {1,2,3,4,5};
  public boolean game_over = false;
  public int playerPos = 1;
   Scanner input = new Scanner(System.in);
