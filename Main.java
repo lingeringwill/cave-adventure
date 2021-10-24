@@ -1,10 +1,12 @@
-public static class Main {
+public class Main {
   public static void main(String[] args) {
     cavestuff work = new cavestuff();
-    while (!work.game_over) {
-      work.setname();
+    puzzles puzzle = new puzzles();
+    
+      /*work.setname();
       work.Intro();
-      work.bossIntro();
-    }
+      work.bossIntro();*/
+      puzzle.room_1();
+    
   }
-}
+} 

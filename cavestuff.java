@@ -2,58 +2,44 @@ import java.util.Scanner;
 
 
 public class cavestuff {
- public String name;
+ public String name = "beevus";
  public int games_won;
- public String boss_name;
+ public String boss_name = "butthead";
  public boolean game_over = false;
  public int playerPos = 1;
+
   Scanner input = new Scanner(System.in);
 
   public void action() {
-    textHelper("To move nsew press the respective keys");
-    textHelper("To look around press l");
+    textHelper("press m to change rooms");
+    textHelper("press l to check what room you're in");
     textHelper("To interact with room boss press q");
 
-   String answer = input.nextLine();
+   String decision = input.nextLine();
+    Room room = new Room();
+   if (decision.equals("m")) {
+    room.room_changer();
+   }
+   if (decision.equals("l")) {
+     System.out.println("you are in room number " +room.room_num);
+   }
+  if (decision.equals("q")) {
 
-   if (answer.equals("n")) {
-
-    }
-
-   if (answer.equals("s")){
-
-    }
-
-   if (answer.equals("w")){
-
-    }
-    
-   if (answer.equals("e")) {
-
-    }
-   if (answer.equals("a")) {
-
-    }
-   if (answer.equals("l")) {
-
-    }
-    if (answer.equals("q")) {
-
-    
-    }
+  }
   
    }
   
   public void Intro() {
+    games_won = 0;
     textHelper("you wake up in the dark, you can't see anything, you decide to look around");
   }
   //SETS NAME FOR PUBLIC VARIABLE NAME , call this when in room 1
   public void setname() {
     textHelper("please enter in your name ");
-    this.name = input.nextLine();
+    name = input.nextLine();
     textHelper("please enter the boss name");
      
-    this.boss_name = input.nextLine();
+    boss_name = input.nextLine();
     input.close();
 
   
@@ -61,7 +47,7 @@ public class cavestuff {
   // place in room one when you meet the boss
   public void bossIntro() {
 
-    textHelper("Hello there " + this.name + " You can refer to me as " + this.boss_name + " (couldn't you come up with a better name?), you are now my prisoner in this elaborate cave...... that only has 5 roooms. go forth and  fight your inner demons, dual them in a battle to the end *disappears*");
+    textHelper("Hello there " + name + " You can refer to me as " + boss_name + " (couldn't you come up with a better name?), you are now my prisoner in this elaborate cave...... that only has 5 roooms. go forth and  fight your inner demons, dual them in a battle to the end *disappears*");
   }
 
 
