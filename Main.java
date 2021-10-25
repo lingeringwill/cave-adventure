@@ -3,9 +3,9 @@ public class Main {
     cavestuff work = new cavestuff();
     puzzles puzzle = new puzzles();
     
-      /*work.setname();
+      work.setname();
       work.Intro();
-      work.bossIntro();*/
+      work.bossIntro();
       puzzle.room_1();
     
   }

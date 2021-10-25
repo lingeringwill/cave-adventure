@@ -18,7 +18,7 @@ public class puzzles {
     public void fight_1(String l) {
         
         boolean onedone = false;
-        if (onedone = false){
+        if (onedone == false){
         int tries = 3;
         Scanner answer_one = new Scanner(System.in);
         logik.textHelper("Wow so you're the new guy who fell in, *stares*, gotta say you don't look that tough but it's whatever");
@@ -39,13 +39,13 @@ public class puzzles {
 
             }
         }
-
+        answer_one.close();
     }
     else if ( onedone == true)  {
         logik.textHelper("you've already fought this boss");
         logik.action();
     }
-
+   
     }
   
 }
