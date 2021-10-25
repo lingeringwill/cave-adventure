@@ -8,5 +8,7 @@ public class Main {
       work.bossIntro();
       puzzle.room_1();
       puzzle.room_2();
+      puzzle.room_3();
+      puzzle.room_4();
   }
 } 
