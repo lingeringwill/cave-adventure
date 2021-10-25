@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 
 public class cavestuff {
- public String name = "beevus";
+ public String name;
  public int games_won;
- public String boss_name = "butthead";
+ public String boss_name;
  public boolean game_over = false;
  public int playerPos = 1;
 
@@ -21,11 +21,12 @@ public class cavestuff {
     room.room_changer();
    }
    if (decision.equals("l")) {
-     System.out.println("you are in room number " +room.room_num);
+     System.out.println("you are in room number " + room.room_num);
    }
   if (decision.equals("q")) {
 
   }
+  
   
    }
   
@@ -34,15 +35,14 @@ public class cavestuff {
     textHelper("you wake up in the dark, you can't see anything, you decide to look around");
   }
   //SETS NAME FOR PUBLIC VARIABLE NAME , call this when in room 1
-  public void setname() {
+  
+  cavestuff() {
     textHelper("please enter in your name ");
     name = input.nextLine();
     textHelper("please enter the boss name");
      
     boss_name = input.nextLine();
-    input.close();
-
-  
+    
   }
   // place in room one when you meet the boss
   public void bossIntro() {
